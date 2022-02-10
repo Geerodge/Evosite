@@ -1,0 +1,44 @@
+.header {
+  grid-area: Header;
+	margin: 0 auto;
+  max-width: $max-width;
+}
+
+.nav {
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+.hero {
+  grid-area: Hero;
+  margin: 0 auto;
+}
+
+.image-aside {
+  grid-area: ImageAside;
+  margin: 0 auto;
+  max-width: $max-width; 
+}
+
+.card-list {
+  grid-area: CardList;
+	margin: 0 auto;
+}
+
+.footer {
+  grid-area: Footer;
+	margin: 0 auto;
+}
+
+.layout {
+  display: grid;
+
+  grid-template-rows: repeat(5);
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    'Header'
+    'Hero'
+    'ImageAside'
+    'CardList'
+    'Footer';
+}

@@ -1,0 +1,138 @@
+.card-list {
+  background-color: $blue-light;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: $max-width;
+    overflow: hidden;
+  }
+
+  &__title {
+    align-items: flex-end;
+    color: $white;
+    display: flex;
+    font-family: $primary-font;
+    font-size: 2rem;
+    margin: 0 2.5%;
+    width: 45%;
+  }
+
+  &__button {
+    color: $blue-light;
+    background-color: $white;
+    margin: calc($space * 2) auto calc($space * 7) auto;
+
+    &:hover {
+      color: $white;
+      background-color: rgba($grey-light, 0.3);
+    }
+  }
+
+  &__carousel {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2.5%;
+    width: 45%;
+  }
+
+  &__carousel-btn {
+    color: $blue-light;
+    background-color: $white;
+    margin: $space;
+
+    &:hover {
+      color: $white;
+      background-color: rgba($grey-light, 0.3);
+    }
+    &:hover .card-list__carousel-btn-actual {
+      color: $white;
+      background-color: rgba($grey-light, 0);
+    }
+  }
+
+  &__carousel-btn-actual {
+    color: $blue-light;
+    background-color: $white;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include lg {
+      flex-direction: row;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    display: flex;
+    height: 350px;
+    margin: 2.5%;
+    min-width: 45%;
+  }
+
+  &__card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__card:nth-child(1) &__card-inner {
+    background-image: url(../../img/card1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__card:nth-child(2) &__card-inner {
+    background-image: url(../../img/card2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__card:nth-child(3) &__card-inner {
+    background-image: url(../../img/card3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__card-title {
+    color: $white;
+    font-family: $secondary-font;
+    margin: $space;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  &__card-content {
+    background-color: $white;
+    color: $blue-dark;
+    font-weight: 700;
+    font-family: $primary-font;
+    padding: calc($space * 2);
+  }
+
+  &__card-date {
+    color: $grey-light;
+    font-family: $secondary-font;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__card-link {
+    color: $blue-light;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}

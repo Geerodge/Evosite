@@ -1,0 +1,114 @@
+.header {
+  padding: $space;
+  width: 100%;
+  z-index: 9999;
+
+  @include lg {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    z-index: 9999;
+
+    @include lg {
+      align-items: center;
+      display: flex;
+      width: 50%;
+    }
+  }
+
+  &__sub-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+
+    @include lg {
+      align-items: center;
+      justify-content: flex-end;
+      height: 100px;
+      width: 50%;
+    }
+  }
+
+  &__button-cta {
+    
+    &:hover {
+      color: $white;
+      background-color: $grey-light;
+    }
+  }
+
+  &__button-cta,
+  &__icons-actual {
+    margin: calc($space / 2);
+  }
+
+  &__icons-actual {
+    
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__phone {
+    padding: 8px $space;
+
+    @include lg {
+      border-radius: 16.15px;
+      padding: $space calc($space * 1.5);
+    }
+  }
+
+  &__phone-actual {
+
+    @include lg {
+      margin-right: $space;
+    }
+  }
+
+  &__nav {
+    margin-top: calc($space * 2);
+    z-index: 9999;
+
+    @include lg {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__nav-desktop {
+    
+    @include lg {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__nav-desktop-link {
+    color: $white;
+    font-family: $secondary-font;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__nav-mobile-logo-actual {
+    height: 70px;
+  }
+
+  &__nav-mobile-burger {
+    margin: calc($space * 2);
+    position: absolute;
+    right: 0;
+    top: 10;
+  }
+}

@@ -1,0 +1,46 @@
+// Colours (Brand)
+$blue-light: #2F5C7C;
+$blue-dark: #2E4D63;
+
+// Colours (Text)
+$black: #000000;
+$white: #ffffff;
+$grey-dark: #39373C;
+$grey-light: #B7BDC1;
+$primary-heading: #2F5C7C;
+
+// Spacing
+$space: 10px;
+$max-width: 1300px;
+
+// Fonts
+$primary-font: 'Merriweather', serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+/* merriweather-regular - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merriweather-v28-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/merriweather-v28-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merriweather-v28-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merriweather-v28-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merriweather-v28-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merriweather-v28-latin-regular.svg#Merriweather') format('svg'); /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v23-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}

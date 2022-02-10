@@ -1,0 +1,33 @@
+// Breakpoints
+$mobile: 320px;
+$tablet: 740px;
+$desktop: 980px;
+$wide: 1300px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: $mobile) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: $tablet) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: $desktop) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: $wide) {
+      @content;
+  }
+}

@@ -1,0 +1,50 @@
+.hero {
+  background-image: url(../../img/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(85%);
+  height: 100vh;
+  margin-top: -156px;
+  width: 100%;
+
+  @include lg {
+    top: -144px;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-bottom: calc($space * 4);
+    text-align: center;
+  }
+
+  &__pre-text {
+    color: $white;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    color: $white;
+    font-family: $primary-font;
+    margin: 0;
+  }
+
+  &__button {
+    margin-top: calc($space * 2);
+
+    &:hover {
+      color: $white;
+      background-color: $grey-light;
+    }
+  }
+
+  &__button-actual {
+    color: $white;
+    fill: $white;
+  }
+}

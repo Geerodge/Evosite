@@ -1,0 +1,22 @@
+// CSS Reset
+@import-normalize;
+@import-sanitize;
+
+// Variables
+@import './styles/variables';
+
+// Mixins
+@import './styles/mixins';
+
+// Layout Styles
+@import './styles/layout';
+
+// Global Styles
+@import './styles/global';
+
+// Components
+@import './components/Header/header';
+@import './components/Hero/hero';
+@import './components/ImageAside/imageaside';
+@import './components/CardList/cardlist';
+@import './components/Footer/footer';
